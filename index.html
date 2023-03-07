@@ -25,7 +25,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
                 <a class="logo link" href="./index.html">Web<span class="logo-style link">Studio</span></a>
                 <ul class="nav list">
                     <li class="nav-menu">
-                        <a class="navigation link" href="./index.html">Studio</a>
+                        <a class="navigation current link" href="./index.html">Studio</a>
                     </li>
                     <li class="nav-menu">
                         <a class="navigation link" href="./portfolio.html">Portfolio</a>
@@ -57,7 +57,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
         <section class="hero">
             <div class="hero-container container">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
-                <button type="button" class="hero-button">Order Service</button>
+                <button type="button" class="hero-button" data-modal-open>Order Service</button>
             </div>
         </section>
         <!-- /hero_section -->
@@ -403,6 +403,20 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
         </div>
     </footer>
 
+    <!-- modal-window -->
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-btn" data-modal-close>
+                <svg class="modal-icon" width="8" height="8">
+                    <use href="./images/sprite.svg#icon-modal-window-btn"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
