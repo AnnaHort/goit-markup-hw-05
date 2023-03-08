@@ -616,7 +616,10 @@ button {
     background: var(--accent-bgc-color);
     border: 1px solid var(--secondary-accent-textcolor-light);
     border-radius: 4px;
-    transition: background-color var(--animation-time-transition);
+    transition: background-color var(--animation-time-transition),
+        color var(--animation-time-transition),
+        box-shadow var(--animation-time-transition),
+        border-color var(--animation-time-transition);
 }
 
 .btn-filter {
@@ -628,11 +631,6 @@ button {
 
 .btn-filter:hover,
 .btn-filter:focus {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
     color: var(--accent-text-color);
     background-color: var(--btn-hover-bgc-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
